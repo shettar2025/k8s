@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: studentapp-deployment
+    spec:
+      serviceAccountName: studentapp-sa
+      containers:
+      - name: studentapp-repo
+       ## image: IMAGE_PLACEHOLDER  
+        ports:
+        - containerPort: 8080
