@@ -15,6 +15,6 @@ spec:
       serviceAccountName: studentapp-sa 
       containers:
       - name: studentapp-repo
-        image: <ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/studentapp-repo:latest
+        image: 438987840260.dkr.ecr.eu-north-1.amazonaws.com/studentapp-repo
         ports:
         - containerPort: 8080
