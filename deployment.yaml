@@ -18,5 +18,6 @@ spec:
       containers:
       - name: studentapp-repo
         image: 438987840260.dkr.ecr.eu-north-1.amazonaws.com/studentapp-repo:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
