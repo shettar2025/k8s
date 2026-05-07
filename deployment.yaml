@@ -13,8 +13,10 @@ spec:
         app: studentapp
     spec:
       serviceAccountName: studentapp-sa 
+      imagePullSecrets:
+        - name: ecr-secret
       containers:
       - name: studentapp-repo
-        image: 438987840260.dkr.ecr.eu-north-1.amazonaws.com/studentapp-repo
+        image: 438987840260.dkr.ecr.eu-north-1.amazonaws.com/studentapp-repo:latest
         ports:
         - containerPort: 8080
